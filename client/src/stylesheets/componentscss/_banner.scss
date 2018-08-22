@@ -91,37 +91,73 @@
   }
 }
 
+.mens-hero-container {  
+  position: relative;
+  top: -200px;
+  
+  @include flex(column, center, center);
+  img {
+    height: 71px;
+    width: 106px;
+  }
+  .images-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    @include flex(row, space-between, flex-start);
+    h1 {
+      width: 30%;
+      margin: auto;
+      @include setHeadline();
+      font-size: 5rem;
+    }
+  }
+  #right-img {
+    height: 500px;
+    width: 30%;
+  }
+  #left-img {
+    height: 500px;
+    width: 40%;
+  }
+}
+
 @media screen and (min-width: 300px ) {
   .hero-banner, .img-progress-bar, .division,
-  .womens-hero-container {
+  .womens-hero-container, .product-list-container,
+  .mens-hero-container {
     margin: auto;
     width: 100%;
   }
 }
 @media screen and (min-width: 750px ) {
   .hero-banner, .img-progress-bar, .division,
-  .womens-hero-container {
+  .womens-hero-container, .product-list-container,
+  .mens-hero-container {
     margin: auto;
     width: 98%;
   }
 }
 @media screen and (min-width: 1024px ) {
   .hero-banner, .img-progress-bar, .division,
-  .womens-hero-container {
+  .womens-hero-container, .product-list-container,
+  .mens-hero-container {
     margin: auto;
     width: 95%;
   }
 }
 @media screen and (min-width: 1280px ) {
   .hero-banner, .img-progress-bar, .division,
-  .womens-hero-container {
+  .womens-hero-container, .product-list-container,
+  .mens-hero-container {
     margin: auto;
     width: 95%;
   }
 }
 @media screen and (min-width: 1600px ) {
   .hero-banner, .img-progress-bar, .division,
-  .womens-hero-container {
+  .womens-hero-container, .product-list-container,
+  .mens-hero-container {
     margin: auto;
     width: 92%;
   }

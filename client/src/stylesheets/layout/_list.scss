@@ -1,0 +1,29 @@
+.product-list-container {
+  // background: blue;
+  height: 100%;
+  position: relative;
+  top: -350px;
+
+  @include flex(row, space-between, center);
+  flex-wrap: wrap;
+  margin-bottom: 200px;
+}
+#mens {
+  top: -100px;
+}
+.card {
+  width: 24%;
+  text-align: center;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  h2 {
+    @include setFont(400);
+    font-size: 1rem;
+  }
+  h3 {
+    @include setFont(700);
+    font-size: 0.7rem;
+  }
+}

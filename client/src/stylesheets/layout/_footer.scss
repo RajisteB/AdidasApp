@@ -1,0 +1,29 @@
+.footer {
+  background: #000;
+  width: 100%;
+  margin: auto;
+  padding: 50px 0px 20px 0px;;
+
+  @include flex(row, space-around, flex-start);
+  flex-wrap: wrap;
+
+  img {
+    height: 120px;
+    width: 150px;
+    padding: 20px;
+  }
+  ul {
+    color: white;
+    @include setFont(300);
+    font-size: 0.7rem;
+    line-height: 150%;
+    .title {
+      @include setFont(400);
+      font-size: 1.6rem;
+      padding-bottom: 20px;
+    }
+    li {
+      list-style-type: none;
+    }
+  }
+}
