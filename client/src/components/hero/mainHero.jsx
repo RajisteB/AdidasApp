@@ -92,7 +92,7 @@ class HeroBanner extends Component {
 
     bannerStyle = {
       backgroundImage: "url(" + images[imgIndex] +")",
-      backgroundSize: "cover",
+      backgroundSize: "contain",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center center"
     }

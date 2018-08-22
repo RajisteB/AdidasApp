@@ -2,6 +2,7 @@
   width: 100%;
   height: 80vh;
   // background: blue;
+  text-align: center;
   image {
     margin: auto;
     position: center center;
@@ -9,16 +10,15 @@
   }
   h1 {
     @include setHeadline();
-    margin-left: 100px;
-    padding-top: 60px;
+    font-size: 3rem;
   }
 }
 .linear {
-  width: 70%;
+  width: 100%;
   margin: auto;
 
   position: relative;
-  top: -350px;
+  top: -125px;
   left: 0;
   right: 0;
   margin: auto;
@@ -27,13 +27,13 @@
   @include flex(column, center, center);
   .line {
     width: 3px;
-    height: 400px;
+    height: 100px;
     margin-top: 20px;
     background-color: $off-black;
   }
   button {
     color: white;
-    width: 40%;
+    width: 80%;
     border: none;
     margin: 5px;
     padding: 6px;
@@ -54,6 +54,7 @@
     background: $off-black;
   }
   @include flex(column, center, flex-start);
+  display: none;
   h4 {
     @include setFont(700);
     font-size: 0.8rem;
@@ -64,8 +65,9 @@
   @include flex(column, center, center);
   
   position: relative;
-  top: -350px;
+  top: -50px;
   
+  width: 100%;
   img {
     height: 71px;
     width: 106px;
@@ -80,8 +82,8 @@
   }
   .img-container {
     margin: auto;
-    height: 570px;
-    width: 570px;
+    height: 270px;
+    width: 270px;
   }
   .overlay {
     width: 100%;
@@ -93,12 +95,20 @@
 
 .mens-hero-container {  
   position: relative;
-  top: -200px;
+  top: 120px;
   
   @include flex(column, center, center);
   img {
     height: 71px;
     width: 106px;
+  }
+  .medium-line {
+    margin: auto;
+    position: relative;
+    width: 3px;
+    height: 100px;
+    margin: 20px 0px;
+    background-color: $off-black;
   }
   .images-container {
     width: 100%;
@@ -109,16 +119,17 @@
       width: 30%;
       margin: auto;
       @include setHeadline();
-      font-size: 5rem;
+      font-size: 3rem;
     }
   }
   #right-img {
-    height: 500px;
-    width: 30%;
+    height: 300px;
+    width: 40%;
   }
   #left-img {
-    height: 500px;
+    height: 200px;
     width: 40%;
+    display: none;
   }
 }
 

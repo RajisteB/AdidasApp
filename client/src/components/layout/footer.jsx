@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer">
       <img src={BlackLogo} alt=""/>
       <ul>
-        <li class="title">Company</li>
+        <li className="title">Company</li>
         <li>About</li>
         <li>History</li>
         <li>Corporate</li>
@@ -17,7 +17,7 @@ const Footer = () => {
         <li>Mobile Apps</li>
       </ul>
       <ul>
-        <li class="title">Support</li>
+        <li className="title">Support</li>
         <li>Help</li>
         <li>Order Tracker</li>
         <li>Returns & Refunds</li>
@@ -25,7 +25,7 @@ const Footer = () => {
         <li>Site Map</li>
       </ul>
       <ul>
-        <li class="title">Shop</li>
+        <li className="title">Shop</li>
         <li>Store Locater</li>
         <li>Adidas Men</li>
         <li>Adidas Women</li>
@@ -35,14 +35,14 @@ const Footer = () => {
         <li>Adidas Skateboarding</li>
       </ul>
       <ul>
-        <li class="title">Privacy</li>
+        <li className="title">Privacy</li>
         <li>Privacy & Security</li>
         <li>Runtastic Privacy</li>
         <li>Statement</li>
         <li>Terms & Conditions</li>
       </ul>
       <ul>
-        <li class="title">Gift Cards</li>
+        <li className="title">Gift Cards</li>
         <li>Email a Gift Card</li>
         <li>Ship a Gift Card</li>
         <li>Check Balance</li>

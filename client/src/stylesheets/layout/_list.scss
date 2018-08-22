@@ -2,17 +2,17 @@
   // background: blue;
   height: 100%;
   position: relative;
-  top: -350px;
+  top: -50px;
 
   @include flex(row, space-between, center);
   flex-wrap: wrap;
   margin-bottom: 200px;
 }
 #mens {
-  top: -100px;
+  top: 100px;
 }
 .card {
-  width: 24%;
+  width: 50%;
   text-align: center;
   img {
     height: 100%;
@@ -22,8 +22,9 @@
     @include setFont(400);
     font-size: 1rem;
   }
-  h3 {
+  h4 {
     @include setFont(700);
-    font-size: 0.7rem;
+    font-size: 1.2rem;
+    font-style: italic;
   }
 }
