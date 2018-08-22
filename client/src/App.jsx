@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/layout/header.jsx';
+import HeroBanner from './components/hero/mainHero.jsx';
 import Main from './hoc/main.jsx';
 import './App.css';
 
@@ -8,6 +9,7 @@ class App extends Component {
     return (
       <Main>
         <Header />
+        <HeroBanner />
       </Main>
     );
   }

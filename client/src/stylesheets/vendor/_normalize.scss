@@ -345,5 +345,6 @@ body, html {
   height: 100%;
   width: 100vw;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }

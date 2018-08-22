@@ -8,6 +8,12 @@
   letter-spacing: 1px;
 }
 
+@mixin setHeadline() {
+  font-family: 'Knewave', cursive;
+  font-size: 4rem;
+  letter-spacing: 1.2px;
+}
+
 @mixin flex($direction, $justify, $align) {
   display: flex;
   flex-direction: $direction;

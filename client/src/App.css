@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Knewave");
 html {
   line-height: 1.15;
   /* 1 */
@@ -303,7 +304,8 @@ body, html {
   height: 100%;
   width: 100vw;
   box-sizing: border-box;
-  overflow: hidden; }
+  overflow-x: hidden;
+  overflow-y: auto; }
 
 .top-navigation {
   width: 100%;
@@ -311,16 +313,111 @@ body, html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
+  .top-navigation .nav-child {
+    height: 20%;
+    width: 20%;
+    transition: color 0.6s ease-in-out;
+    padding-top: 10px; }
+    .top-navigation .nav-child:hover {
+      background-color: black;
+      text-decoration: underline;
+      color: white;
+      cursor: pointer; }
   .top-navigation img {
     height: 71px;
-    width: 106px;
-    margin: 0px 50px; }
+    width: 106px; }
   .top-navigation h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    font-size: 1rem; }
+    font-size: 1rem;
+    margin: 0;
+    padding: 0; }
+
+.hero-banner {
+  width: 100%;
+  height: 80vh;
+  margin: auto; }
+  .hero-banner image {
+    margin: auto;
+    position: center center;
+    background: red; }
+  .hero-banner h1 {
+    font-family: 'Knewave', cursive;
+    font-size: 4rem;
+    letter-spacing: 1.2px;
+    margin-left: 100px;
+    padding-top: 60px; }
+
+.linear {
+  width: 70%;
+  margin: auto;
+  position: absolute;
+  top: 600px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .linear .line {
+    width: 3px;
+    height: 450px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7); }
+  .linear button {
+    color: white;
+    width: 40%;
+    border: none;
+    margin: 5px;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.95);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 1.8rem; }
+
+.img-progress-bar {
+  opacity: 0.2;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
+  .img-progress-bar .dynamic-progress {
+    width: 5px;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.7); }
+  .img-progress-bar h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.8rem; }
+
+@media screen and (min-width: 300px) {
+  .hero-banner, .img-progress-bar {
+    width: 100%; } }
+
+@media screen and (min-width: 750px) {
+  .hero-banner, .img-progress-bar {
+    width: 98%; } }
+
+@media screen and (min-width: 1024px) {
+  .hero-banner, .img-progress-bar {
+    width: 95%; } }
+
+@media screen and (min-width: 1280px) {
+  .hero-banner, .img-progress-bar {
+    width: 95%; } }
+
+@media screen and (min-width: 1600px) {
+  .hero-banner, .img-progress-bar {
+    width: 92%; } }
 
 h1 {
   font-family: 'Roboto', sans-serif;

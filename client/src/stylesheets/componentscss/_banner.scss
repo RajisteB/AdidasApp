@@ -1,0 +1,88 @@
+.hero-banner {
+  width: 100%;
+  height: 80vh;
+  margin: auto;
+  // background: blue;
+  image {
+    margin: auto;
+    position: center center;
+    background: red;
+  }
+  h1 {
+    @include setHeadline();
+    margin-left: 100px;
+    padding-top: 60px;
+  }
+}
+.linear {
+  width: 70%;
+  margin: auto;
+
+  position: absolute;
+  top: 600px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+
+  @include flex(column, center, center);
+  .line {
+    width: 3px;
+    height: 450px;
+    margin-top: 20px;
+    background-color: $off-black;
+  }
+  button {
+    color: white;
+    width: 40%;
+    border: none;
+    margin: 5px;
+    padding: 6px;
+    background: $black;
+    @include setFont(300);
+    font-size: 1.8rem;
+  }
+}
+
+.img-progress-bar {
+  opacity: 0.2;
+  // background: green
+  height: 60px;
+  margin: auto;
+  .dynamic-progress {
+    width: 5px;
+    height: 4px;
+    background: $off-black;
+  }
+  @include flex(column, center, flex-start);
+  h4 {
+    @include setFont(700);
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 300px ) {
+  .hero-banner, .img-progress-bar {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 750px ) {
+  .hero-banner, .img-progress-bar {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 1024px ) {
+  .hero-banner, .img-progress-bar {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1280px ) {
+  .hero-banner, .img-progress-bar {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1600px ) {
+  .hero-banner, .img-progress-bar {
+    width: 92%;
+  }
+}
