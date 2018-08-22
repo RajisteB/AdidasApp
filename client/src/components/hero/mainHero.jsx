@@ -4,7 +4,6 @@ import BannerImage01 from '../../images/peach.png';
 import BannerImage02 from '../../images/pinkshot.png';
 import BannerImage03 from '../../images/smurfsideshot.png';
 import BannerImage04 from '../../images/brightwhite.png';
-import Fadethrough from 'react-fadethrough';
 
 class HeroBanner extends Component {
   constructor() {
