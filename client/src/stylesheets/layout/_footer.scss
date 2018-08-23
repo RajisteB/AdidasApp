@@ -32,3 +32,18 @@
     }
   }
 }
+
+@media screen and (min-width: 750px) {
+  .footer {
+    top: 0px;
+  }
+  .footer ul {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer ul {
+    width: 12%;
+  }
+}
+

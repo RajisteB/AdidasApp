@@ -4,7 +4,7 @@
   position: relative;
   top: -50px;
 
-  @include flex(row, space-between, center);
+  @include flex(row, space-between, space-around);
   flex-wrap: wrap;
   margin-bottom: 200px;
 }
@@ -12,19 +12,44 @@
   top: 100px;
 }
 .card {
-  width: 50%;
+  width: 30%;
   text-align: center;
+  margin-top: 30px;
+  overflow-y: hidden;
+  box-shadow: 0 0.5px 1px rgba(202, 32, 32, 0.06), 0 0.5px 1px rgba(0,0,0,0.1);
+  // box-shadow: 0 7px 16px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    cursor: pointer;
+  }
   img {
-    height: 100%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
   }
   h2 {
     @include setFont(400);
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   h4 {
     @include setFont(700);
-    font-size: 1.2rem;
-    font-style: italic;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .product-list-container {
+    top: -300px;
+  }
+  #mens {
+    top: -100px;
+  }
+  .card {
+    width: 32%;
+    h2 {
+      font-size: 0.8rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
   }
 }

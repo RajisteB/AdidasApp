@@ -301,7 +301,6 @@ template {
 
 /*Addtnl Misc */
 body, html {
-  height: 100%;
   width: 100vw;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -370,6 +369,16 @@ body, html {
     .footer ul li {
       list-style-type: none; }
 
+@media screen and (min-width: 750px) {
+  .footer {
+    top: 0px; }
+  .footer ul {
+    width: 20%; } }
+
+@media screen and (min-width: 1000px) {
+  .footer ul {
+    width: 12%; } }
+
 .product-list-container {
   height: 100%;
   position: relative;
@@ -377,7 +386,7 @@ body, html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: space-around;
   flex-wrap: wrap;
   margin-bottom: 200px; }
 
@@ -385,22 +394,39 @@ body, html {
   top: 100px; }
 
 .card {
-  width: 50%;
-  text-align: center; }
+  width: 30%;
+  text-align: center;
+  margin-top: 30px;
+  overflow-y: hidden;
+  box-shadow: 0 0.5px 1px rgba(202, 32, 32, 0.06), 0 0.5px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out; }
+  .card:hover {
+    cursor: pointer; }
   .card img {
-    height: 100%;
-    width: 100%; }
+    max-height: 100%;
+    max-width: 100%; }
   .card h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    font-size: 1rem; }
+    font-size: 0.7rem; }
   .card h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
-    font-size: 1.2rem;
-    font-style: italic; }
+    font-size: 0.9rem; }
+
+@media screen and (min-width: 750px) {
+  .product-list-container {
+    top: -300px; }
+  #mens {
+    top: -100px; }
+  .card {
+    width: 32%; }
+    .card h2 {
+      font-size: 0.8rem; }
+    .card h4 {
+      font-size: 1rem; } }
 
 .hero-banner {
   width: 100%;
@@ -430,7 +456,7 @@ body, html {
   justify-content: center;
   align-items: center; }
   .linear .line {
-    width: 3px;
+    width: 2px;
     height: 100px;
     margin-top: 20px;
     background-color: rgba(0, 0, 0, 0.7); }
@@ -480,14 +506,14 @@ body, html {
   .womens-hero-container .medium-line {
     margin: auto;
     position: relative;
-    width: 3px;
+    width: 2px;
     height: 100px;
     margin: 20px 0px;
     background-color: rgba(0, 0, 0, 0.7); }
   .womens-hero-container .img-container {
     margin: auto;
-    height: 270px;
-    width: 270px; }
+    height: 350px;
+    width: 350px; }
   .womens-hero-container .overlay {
     width: 100%;
     height: 100%;
@@ -507,7 +533,7 @@ body, html {
   .mens-hero-container .medium-line {
     margin: auto;
     position: relative;
-    width: 3px;
+    width: 2px;
     height: 100px;
     margin: 20px 0px;
     background-color: rgba(0, 0, 0, 0.7); }
@@ -521,17 +547,18 @@ body, html {
     align-items: flex-start; }
     .mens-hero-container .images-container h1 {
       width: 30%;
-      margin: auto;
+      margin-left: 20px;
+      margin-top: 60px;
       font-family: 'Knewave', cursive;
       font-size: 4rem;
       letter-spacing: 1.2px;
-      font-size: 3rem; }
+      font-size: 2.4rem; }
   .mens-hero-container #right-img {
-    height: 300px;
-    width: 40%; }
+    height: 225px;
+    width: 45%; }
   .mens-hero-container #left-img {
-    height: 200px;
-    width: 40%;
+    height: 300px;
+    width: 35%;
     display: none; }
 
 @media screen and (min-width: 300px) {
@@ -541,19 +568,62 @@ body, html {
     margin: auto;
     width: 100%; } }
 
+@media screen and (min-width: 400px) {
+  .hero-banner, .img-progress-bar, .division,
+  .womens-hero-container, .product-list-container,
+  .mens-hero-container {
+    margin: auto;
+    width: 100%; }
+  .mens-hero-container #right-img {
+    height: 300px;
+    width: 48%; }
+  .mens-hero-container .images-container h1 {
+    font-size: 3rem; } }
+
 @media screen and (min-width: 750px) {
   .hero-banner, .img-progress-bar, .division,
   .womens-hero-container, .product-list-container,
   .mens-hero-container {
     margin: auto;
-    width: 98%; } }
+    width: 98%; }
+  .hero-banner h1 {
+    font-size: 4rem; }
+  .womens-hero-container {
+    top: -300px; }
+  .mens-hero-container {
+    top: -100px; }
+    .mens-hero-container #right-img {
+      height: 450px;
+      width: 48%; }
+    .mens-hero-container #left-img {
+      display: block; }
+    .mens-hero-container .images-container h1 {
+      font-size: 4rem;
+      margin: 0 auto; }
+  .linear {
+    top: -350px; }
+    .linear .line {
+      height: 400px; }
+    .linear button {
+      width: 30%;
+      font-size: 1.4rem; } }
 
 @media screen and (min-width: 1024px) {
   .hero-banner, .img-progress-bar, .division,
   .womens-hero-container, .product-list-container,
   .mens-hero-container {
     margin: auto;
-    width: 95%; } }
+    width: 95%; }
+  .mens-hero-container #right-img {
+    height: 500px;
+    width: 40%; }
+  .mens-hero-container #left-img {
+    display: block;
+    height: 400px; }
+  .mens-hero-container .images-container h1 {
+    font-size: 4rem;
+    margin-left: 80px;
+    margin-top: 40px; } }
 
 @media screen and (min-width: 1280px) {
   .hero-banner, .img-progress-bar, .division,
@@ -562,12 +632,22 @@ body, html {
     margin: auto;
     width: 95%; } }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1500px) {
   .hero-banner, .img-progress-bar, .division,
   .womens-hero-container, .product-list-container,
   .mens-hero-container {
     margin: auto;
-    width: 92%; } }
+    width: 92%; }
+  .mens-hero-container #right-img {
+    height: 500px;
+    width: 30%; }
+  .mens-hero-container #left-img {
+    display: block;
+    height: 500px; }
+  .mens-hero-container .images-container h1 {
+    font-size: 6rem;
+    margin-left: 70px;
+    margin-top: 80px; } }
 
 .division {
   background: #DCDCDC;
@@ -596,13 +676,19 @@ body, html {
   .division .short-line {
     margin: auto;
     position: relative;
-    width: 3px;
+    width: 2px;
     height: 100px;
-    top: -200px;
+    top: -220px;
     background-color: rgba(0, 0, 0, 0.7); }
 
 #m {
   top: 0px; }
+
+@media screen and (min-width: 750px) {
+  .division {
+    top: -400px; }
+  #m {
+    top: -200px; } }
 
 h1 {
   font-family: 'Roboto', sans-serif;

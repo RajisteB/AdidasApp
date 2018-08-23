@@ -25,13 +25,22 @@
   .short-line {
     margin: auto;
     position: relative;
-    width: 3px;
+    width: 2px;
     height: 100px;
-    top: -200px;
+    top: -220px;
     background-color: $off-black;
   }
 }
 
 #m {
   top: 0px;
+}
+
+@media screen and (min-width: 750px) {
+  .division {
+    top: -400px;
+  }
+  #m {
+    top: -200px;
+  }
 }

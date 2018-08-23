@@ -11,16 +11,30 @@ class ProductList extends Component {
   }
 
   render() {
-    let nums = [...Array(8)];
-    console.log(nums);
+    if (this.props.footwear) {
+      return (
+        <div className="product-list-container" id={this.props.id}>
+          {this.props.footwear.map(product => {
+            return ( 
+              <ProductCard 
+                key={product.prodID} 
+                ID={product.prodID}
+                price={product.localPrice}
+                regularPrice={product.regularPrice}
+                imgUrl={product.imageURI}
+                productUrl={product.modelQuickViewDetails.linkUrl}
+                shipping={product.modelQuickViewDetails.freeShipping}
+                caption={product.caption}
+                description={this.props.the_Description}
+              />
+            );
+          })}
+        </div>
+      );
+    } else {
+      return <i className="fas fa-spinner fa-pulse fa-2x"></i>;
+    }
 
-    return(
-      <div className="product-list-container" id={this.props.id}>
-        {nums.map((num, indx) => {
-          return <ProductCard key={indx} />
-        })}
-      </div>
-    );
   }
 }
 

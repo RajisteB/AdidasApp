@@ -6,8 +6,8 @@ import BannerImage03 from '../../images/smurfsideshot.png';
 import BannerImage04 from '../../images/brightwhite.png';
 
 class HeroBanner extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       imgIndex: 0,
       images: [
@@ -89,10 +89,13 @@ class HeroBanner extends Component {
     let { images, imgIndex, progress } = this.state;
     let bannerStyle = null;
     let barStyle = null;
+    let imgProp = null;
+    
+    imgProp = this.props.size > 1000 ? "cover" : "contain";
 
     bannerStyle = {
       backgroundImage: "url(" + images[imgIndex] +")",
-      backgroundSize: "contain",
+      backgroundSize: imgProp,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center center"
     }
@@ -109,7 +112,7 @@ class HeroBanner extends Component {
           </h1>
         </div>
         <div className="linear">
-          <button>Shop Now</button>
+          <button onClick={() => this.props.handleScroll("women")}>Shop Now</button>
           <div className="line"></div>
         </div>
         <div className="img-progress-bar">
