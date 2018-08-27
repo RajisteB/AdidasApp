@@ -23,5 +23,5 @@ After having an API deprecated from an earlier ecommerce project, I decided to d
 ## Planning & Design
 For the design, I once again used AdobeXD to first draw out a low-fidelty wireframe and then added in some visuals to create a high-fidelity wireframe. 
 
-![alt text](https://github.com/RajisteB/AdidasApp/blob/master/client/src/images/Lofi.jpg | width=300) 
+![alt text](https://github.com/RajisteB/AdidasApp/blob/master/client/src/images/Lofi.jpg){:height="1000px" width="400px"}
 ![alt text](https://github.com/RajisteB/AdidasApp/blob/master/client/src/images/Adidas%20-%20Hi-Fi%20Wireframe.jpg "Hi Fidelity Wirefram")
