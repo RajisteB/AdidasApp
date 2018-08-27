@@ -26,3 +26,13 @@ For the design, I once again used AdobeXD to first draw out a low-fidelty wirefr
 
 <img src="https://github.com/RajisteB/AdidasApp/blob/master/client/src/images/Lofi.jpg" width="48%" /> <img src="https://github.com/RajisteB/AdidasApp/blob/master/client/src/images/Adidas%20-%20Hi-Fi%20Wireframe.jpg" width="48%"/>
 
+
+## Development 
+Development was very straight-forward, only had 1 minor issue. 
+> Parts of this project are still in development, notably the single product (animated) sidebar and corresponding data...
+
+#### Issue(s):
+There was a CORS (Cross-Origin Resource Sharing) issue that popped up initially when I hit the api's single product query. It was a bit confusing as all the other api routes worked just fined so I was a bit perplexed as to why exactly this data provider did not enable CORS on this one facet.
+
+#### Solution(s):
+I had encountered this issue before and knew that a proxy server could fix things in the meantime, thus, I decided to place all my API calls and logic in a Node/Express backend and have React get access through a proxy server, thus, fixing the issue. 
