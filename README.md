@@ -4,6 +4,8 @@ After having an API deprecated from an earlier ecommerce project, I decided to d
 [Live Site](https://mighty-hollows-88646.herokuapp.com/)
 > As this app is hosted on Heroku's free tier, please give it some time to load. Thank you for your patience.
 
+[!alt text](https://github.com/RajisteB/AdidasApp/blob/master/client/src/images/Adidas-SC.png)
+
 
 
 
