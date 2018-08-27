@@ -24,5 +24,5 @@ After having an API deprecated from an earlier ecommerce project, I decided to d
 For the design, I once again used AdobeXD to first draw out a low-fidelty wireframe and then added in some visuals to create a high-fidelity wireframe. 
 
 
-<img src="https://github.com/RajisteB/AdidasApp/blob/master/client/src/images/Lofi.jpg" width="45%" /> <img src="https://github.com/RajisteB/AdidasApp/blob/master/client/src/images/Adidas%20-%20Hi-Fi%20Wireframe.jpg" width="45%"/>
+<img src="https://github.com/RajisteB/AdidasApp/blob/master/client/src/images/Lofi.jpg" width="50%" /> <img src="https://github.com/RajisteB/AdidasApp/blob/master/client/src/images/Adidas%20-%20Hi-Fi%20Wireframe.jpg" width="50%"/>
 
